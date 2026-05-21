@@ -17,6 +17,10 @@ header {
   justify-content: center;
   text-align: center;
 }
+footer {
+  text-align: center;
+  width: 100%;
+}
 .heading {
   font-weight: 200;
   color: hsl(234, 12%, 34%);
@@ -120,6 +124,9 @@ article:nth-child(4) {
     right: 20px;
     bottom: 20px;
   }
+  footer {
+    font-size: 12px;
+  }
 }
 
 @media screen and (max-width: 500px) {
@@ -156,6 +163,9 @@ article:nth-child(4) {
     width: 40px;
     right: 20px;
     bottom: 20px;
+  }
+  footer {
+    font-size: 12px;
   }
 }
 @media screen and (max-width: 290px) {
@@ -217,5 +227,8 @@ article:nth-child(4) {
     width: 15px;
     right: 10px;
     bottom: 10px;
+  }
+  footer {
+    font-size: 6px;
   }
 }
