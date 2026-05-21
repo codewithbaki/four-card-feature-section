@@ -1,0 +1,221 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+}
+body {
+  background-color: hsl(0, 0%, 98%);
+}
+header {
+  margin: 30px 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.heading {
+  font-weight: 200;
+  color: hsl(234, 12%, 34%);
+}
+.sub-head {
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+.head-text {
+  max-width: 500px;
+  color: hsl(234, 12%, 34%);
+  font-size: 15px;
+}
+main {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  gap: 30px;
+  padding: 50px 20px;
+}
+article {
+  background-color: white;
+  padding: 30px;
+  position: relative;
+  min-height: 250px;
+  border-radius: 0.5rem;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.05);
+}
+article h3 {
+  color: hsl(234, 12%, 34%);
+  margin-bottom: 0.3rem;
+  font-size: 1rem;
+}
+article p {
+  font-size: 14px;
+  color: hsl(212, 6%, 44%);
+}
+article img {
+  width: 40px;
+  position: absolute;
+  right: 30px;
+  bottom: 30px;
+}
+article:nth-child(1) {
+  grid-column: 2 / span 1;
+  grid-row: 1 / span 2;
+  border-top: 4px solid hsl(0, 78%, 62%);
+}
+
+article:nth-child(2) {
+  grid-column: 1 / span 1;
+  grid-row: 2 / span 2;
+  border-top: 4px solid hsl(180, 62%, 55%);
+}
+
+article:nth-child(3) {
+  grid-column: 3 / span 1;
+  grid-row: 2 / span 2;
+  border-top: 4px solid hsl(212, 86%, 64%);
+}
+
+article:nth-child(4) {
+  grid-column: 2 / 3;
+  grid-row: 3 / span 2;
+  border-top: 4px solid hsl(34, 97%, 64%);
+  /* Responsive media */
+}
+@media screen and (max-width: 800px) {
+  article {
+    padding: 20px;
+  }
+  article h3 {
+    margin-bottom: 0.3rem;
+    font-size: 0.8rem;
+  }
+  article p {
+    font-size: 13px;
+  }
+  article img {
+    width: 30px;
+    right: 20px;
+    bottom: 20px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  article {
+    padding: 20px 10px;
+  }
+  article h3 {
+    margin-bottom: 0.3rem;
+    font-size: 0.8rem;
+  }
+  article p {
+    font-size: 12px;
+  }
+  article img {
+    width: 30px;
+    right: 20px;
+    bottom: 20px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  header {
+    margin: 30px 20px;
+  }
+  main {
+    display: flex;
+    flex-direction: column;
+  }
+  article:nth-child(1) {
+    order: 2;
+  }
+  article:nth-child(2) {
+    order: 1;
+  }
+  article:nth-child(3) {
+    order: 4;
+  }
+  article:nth-child(4) {
+    order: 3;
+  }
+  article {
+    padding: 20px;
+  }
+  article h3 {
+    margin-bottom: 0.3rem;
+    font-size: 1rem;
+  }
+  article p {
+    font-size: 15px;
+  }
+  article img {
+    width: 40px;
+    right: 20px;
+    bottom: 20px;
+  }
+}
+@media screen and (max-width: 290px) {
+  header {
+    margin: 20px 10px;
+  }
+  .heading {
+    font-size: 1rem;
+  }
+  .sub-head {
+    font-size: 1rem;
+  }
+  .head-text {
+    font-size: 10px;
+  }
+  article {
+    padding: 10px;
+    min-height: 200px;
+  }
+  article h3 {
+    margin-bottom: 0.3rem;
+    font-size: 0.7rem;
+  }
+  article p {
+    font-size: 12px;
+  }
+  article img {
+    width: 20px;
+    right: 10px;
+    bottom: 10px;
+  }
+}
+
+@media screen and (max-width: 200px) {
+  header {
+    margin: 20px 10px;
+  }
+  .heading {
+    font-size: 0.65rem;
+  }
+  .sub-head {
+    font-size: 0.65rem;
+  }
+  .head-text {
+    font-size: 8px;
+  }
+  article {
+    padding: 10px;
+    min-height: 150px;
+  }
+  article h3 {
+    margin-bottom: 0.3rem;
+    font-size: 0.6rem;
+  }
+  article p {
+    font-size: 9px;
+  }
+  article img {
+    width: 15px;
+    right: 10px;
+    bottom: 10px;
+  }
+}
